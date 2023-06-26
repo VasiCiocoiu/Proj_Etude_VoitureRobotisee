@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/edit"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="201dp">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:maxLines="4" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        >
+
+        <ImageButton
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layout_toRightOf="@+id/effacer"
+            android:contentDescription="sauvegarde"
+            android:padding="5dp"
+            app:srcCompat="@drawable/save"/>
+
+        <ImageButton
+            android:id="@+id/effacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:contentDescription="effacer"
+            android:padding="5dp"
+            app:srcCompat="@drawable/effacer"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_save"
+            android:background="@color/transparent"
+            android:contentDescription="historique"
+            android:padding="5dp"
+            app:srcCompat="@drawable/historique"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/suppr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:contentDescription="suppr"
+            android:padding="5dp"
+            app:srcCompat="@drawable/suppr"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <ImageButton
+                android:id="@+id/diaGauche"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@color/transparent"
+                android:contentDescription="DiagGauche"
+                android:padding="5dp"
+                app:srcCompat="@drawable/diaggauche"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@color/transparent"
+                android:contentDescription="Haut"
+                android:padding="5dp"
+                app:srcCompat="@drawable/haut"
+                tools:ignore="MissingConstraints" />
+
+
+            <ImageButton
+                android:id="@+id/diagDroite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@color/transparent"
+                android:contentDescription="DiagDroite"
+                android:padding="5dp"
+                app:srcCompat="@drawable/diagdroite"
+                tools:ignore="MissingConstraints" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:background="@color/transparent"
+                android:contentDescription="Gauche"
+                android:padding="5dp"
+                app:srcCompat="@drawable/gauche"
+                tools:ignore="MissingConstraints" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:background="@color/transparent"
+                android:contentDescription="Droite"
+                android:padding="5dp"
+                app:srcCompat="@drawable/droite"
+                tools:ignore="MissingConstraints" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:background="@color/transparent"
+                android:contentDescription="Bas"
+                android:padding="5dp"
+                app:srcCompat="@drawable/bas"
+                tools:ignore="MissingConstraints" />
+
+
+        </TableRow>
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/SendLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"
+        >
+
+        <ImageButton
+            android:id="@+id/vitesse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:contentDescription="vitesse"
+            app:srcCompat="@drawable/vitesse" />
+
+        <ImageButton
+            android:id="@+id/imageButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:contentDescription="suppr"
+            app:srcCompat="@drawable/send" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

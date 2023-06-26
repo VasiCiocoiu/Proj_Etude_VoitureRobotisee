@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IHM</string>
+    <string name="Enchainement">Enchainement</string>
+    <string name="Test">Test</string>
+    <string name="Mission">Mission</string>
+    <string name="Bluetooth">Associer</string>
+    <string name="Hello">Bienvenue !</string>
+    <string name="Text">Voici notre projet ! Vous avez le choix entre different mode. A vous de choisir. Blablabla ......</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
